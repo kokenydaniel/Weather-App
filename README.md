@@ -1,4 +1,4 @@
-<img width="1440" alt="weather_app" src="https://github.com/kokenydaniel/Weather-App/assets/129154129/5fd7b0ed-df49-40f7-916c-0cbef44fc752">
+<img width="1440" alt="weather_app" src="https://github.com/kokenydaniel/Weather-App/assets/129154129/40889fc9-a7a8-4f7b-a172-639dd4d955bf">
 
 <h1 align="center">Weather App - Openweather API project </h1>
 
