@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,17 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <section class="searchBox">
             <input type="text" placeholder="Enter your city">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class=""><i class="fa-solid fa-magnifying-glass"></i></button>
         </section>
         <section class="errorBox">
             <p class="error"></p>
         </section>
-        <section class="weather">
+        <section class="weather row">
             <h1 class="temperature"></h1>
             <h2 class="city"></h2>
             <img src="./assets/image/clouds.png" class="weather-img">
@@ -26,26 +28,26 @@
                 <p class="highest"><i class="fa-solid fa-temperature-arrow-up"></i></p>
             </section>
         </section>
-        <section class="details">
+        <section class="details row">
             <div class="col">
                 <img src="./assets/image/feelsLike.png" alt="feels like icon">
                 <div>
                     <p class="feelsLike"></p>
-                    <p>Feels Like</p>
+                    <p class="detailsText">Feels Like</p>
                 </div>
             </div>
             <div class="col">
                 <img src="./assets/image/humidity.png" alt="humidity icon">
                 <div>
                     <p class="humidity"></p>
-                    <p>Humidity</p>
+                    <p class="detailsText">Humidity</p>
                 </div>
             </div>
             <div class="col">
                 <img src="./assets/image/windSpeed.png" alt="wind speed icon">
                 <div>
                     <p class="windSpeed"></p>
-                    <p>Wind Speed</p>
+                    <p class="detailsText">Wind Speed</p>
                 </div>
             </div>
         </section>
@@ -63,4 +65,5 @@
     <script src="https://kit.fontawesome.com/811f543052.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
+
 </html>

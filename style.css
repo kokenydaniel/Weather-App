@@ -17,11 +17,10 @@ body {
 
 .searchBox {
     margin-top: 30px;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
 }
 
 .searchBox input {
@@ -38,10 +37,11 @@ body {
 
 .searchBox button {
     background-color: rgba(255, 255, 255);
-    border-radius: 50%;
     border: none;
     font-size: 20px;
     padding: 15px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
 }
 
 .searchBox button:hover {
@@ -98,18 +98,9 @@ body {
     border-radius: 50%;
 }
 
-.details {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 20px;
-    margin-top: 30px;
-}
-
 .col {
     display: flex;
     align-items: center;
-    margin-right: 60px;
 }
 
 .col img {
@@ -133,4 +124,74 @@ body {
 
 .weather, .details {
     display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        height: 150vh;
+        text-align: center;
+    }
+
+    .searchBox {
+        padding-top: 0;
+    }
+
+    .searchBox input {
+        padding: 1px 25px;
+        height: 50px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    
+    .searchBox button {
+        background-color: rgba(255, 255, 255);
+        border: none;
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.2rem;
+    }
+
+    .col img {
+        width: 25px;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    
+    .feelsLike,
+    .humidity,
+    .windSpeed {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .col p {
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .col img {
+        width: 20px;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 9px;
+        border-radius: 50%;
+        margin-right: 7px;
+        margin-left: 8px;
+    }
+
+    
+    .col p {
+        margin-top: 10px;
+        font-size: 0.8rem;
+    }
 }
